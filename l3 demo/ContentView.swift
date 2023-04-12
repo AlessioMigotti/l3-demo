@@ -9,13 +9,62 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        
+        
+        ZStack{
+            Color(.systemMint)
+                .ignoresSafeArea()
+            VStack(alignment: .leading, spacing: 20.0) {
+                
+                
+                
+                Image("ironmaiden")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .cornerRadius(15)
+                HStack {
+                    Text("Iron Maiden")
+                        .font(.title)
+                        .fontWeight(.bold)
+                    Spacer()
+                    VStack{
+                        HStack{
+                            
+                            Image(systemName: "star.fill")
+                                
+                            Image(systemName: "star.fill")
+                            Image(systemName: "star.fill")
+                            Image(systemName: "star.fill")
+                            Image(systemName: "star.leadinghalf.filled")
+                        }
+                        
+                        Text("(Reviews 361)")
+                    }
+                    .foregroundColor(.orange)
+                    .font(.caption)
+                }
+                
+                
+                
+                Text("Love Iron, 666, Run, Phantom, Fear")
+                HStack{
+                    Spacer()
+                    Image(systemName: "guitars.fill")
+                    Image(systemName: "music.mic")
+                }
+                .foregroundColor(.gray)
+                .font(.caption)
+            }
+            .padding()
+            .background(Rectangle()
+                .foregroundColor(.white))
+            .cornerRadius(15)
+                .shadow(radius: 15)
+            .padding()
         }
-        .padding()
+        
+        
+        
     }
 }
 
