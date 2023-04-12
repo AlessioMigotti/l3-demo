@@ -46,7 +46,7 @@ struct ContentView: View {
                 
                 
                 
-                Text("Love Iron, 666, Run, Phantom, Fear")
+                Text("Love Iron")
                 HStack{
                     Spacer()
                     Image(systemName: "guitars.fill")
